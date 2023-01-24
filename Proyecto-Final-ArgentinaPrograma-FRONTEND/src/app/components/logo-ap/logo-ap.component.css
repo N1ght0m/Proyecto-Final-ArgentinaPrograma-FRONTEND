@@ -1,3 +1,34 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    margin-right: 0.5em;
+}
 #APLogo{
 width: 150px;
+}
+img{
+    width: 50px;
+    padding-right: 4px;
+}
+.btn{
+    border-width: medium;
+}
+
+/*--- mobile phone view --*/
+
+@media (max-width:575px){
+    .container{
+        flex-direction: column;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social img{
+        margin: 0.2em;
+    }
 }

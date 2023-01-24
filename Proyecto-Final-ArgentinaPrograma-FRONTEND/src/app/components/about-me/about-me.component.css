@@ -40,7 +40,7 @@ div{
 
 @media (min-width: 576px) {
     #ProfilePicture {
-        left: 50%;
+        left: 60%;
         top: -10%;
         transform: translate(-50%, -50%);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -51,7 +51,7 @@ div{
     #ProfilePicture {
         width: 200x;
         height: 200px;
-        left: 29%;
+        left: 30%;
         top: 70%;
         transform: translate(-50%, -50%);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
