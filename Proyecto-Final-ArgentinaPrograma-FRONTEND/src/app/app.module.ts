@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -18,6 +18,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experience/edit-experiencia.component';
+
+
 
 
 @NgModule({
@@ -33,15 +37,17 @@ import { interceptorProvider } from './service/interceptor-service';
     ProjectComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
-    
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [
     interceptorProvider

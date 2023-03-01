@@ -1,27 +1,22 @@
 <div class="row">
-    <h1>Experiencia Laboral</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li><h1>Data Management Associate</h1> - <h3>(2022-2023)</h3></li>
-            <p>Clasifico, organizo, categorizo y anoto diariamente los datos extraídos por los scripts de DocDelta.</p>
-        </ul>
-        <ul>
-            <li><h1>Moderador De Servidor</h1> - <h3>(2022)</h3></li>
-            <p>Proyecto Owlunited NFT de Discord</p>
-        </ul>
-        <ul>
-            <li><h1>Empleado En Fotocopiadora</h1> - <h3>(2022)</h3></li>
-            <p>Empresa Goya en sede Ayacucho,San Miguel de Tucuman</p>
-        </ul>
-        <ul>
-            <li><h1>Operador De Entrada De Datos</h1> - <h3>(2021)</h3></li>
-            <p>Empresa Shell, Salta</p>
-            
-        </ul>
-        <ul>
-            <li><h1>Moderador De Servidor</h1> - <h3>(2021)</h3></li>
-            <p>Proyecto MetaNauts NFT de Discord</p>
-        </ul>
-    </div>
+  <h1>Experiencia Laboral</h1>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+      Nueva experiencia
+    </button>
+  </div>
+
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Experiencia of expe">
+          <td><h4>{{ Experiencia.nombreE }}</h4></td>
+          <td>{{ Experiencia.descriptionE }}</td>
+          <td><i class="bi bi-pencil-square"></i></td>
+          <td><i class="bi bi-x-circle"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
