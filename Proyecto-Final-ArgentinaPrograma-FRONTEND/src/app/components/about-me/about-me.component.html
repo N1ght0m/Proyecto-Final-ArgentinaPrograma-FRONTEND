@@ -1,16 +1,19 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/ProfilePicture.png" class="img-fluid" id="ProfilePicture">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="PP">
+        <img src={{persona.img}} class="img-fluid" id="ProfilePicture">
+        <div id="Title">
+            <p id="name">{{persona.nombre}} {{persona.apellido}}</p>
+            <p>Full Stack Developer Jr</p>
+        </div>
     </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="name">{{persona.nombre}} {{persona.apellido}}</p>
-        <p>Full Stack Developer Jr</p>
-    </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <span>
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 descripcion" id="Details">
+        <div id="About">
             <h1>Acerca de mí</h1>
-            <p>Mi objetivo profesional es continuar expandiendo mis conocimientos en Programación e Informática. Tengo un carácter determinado y aprendo rápido.</p>
-        </span>
+            <p>{{persona.descripcion}}</p>
+        </div>
+        <button type="button" class="btn btn-secondary" routerLink="/editacercade/1" *ngIf="isLogged">
+            <i class="bi bi-pencil-square"></i>
+        </button>
     </div>
 </div>
 

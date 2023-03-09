@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.page{
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 211, 211);
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+html { background-color: darkcyan; }
+

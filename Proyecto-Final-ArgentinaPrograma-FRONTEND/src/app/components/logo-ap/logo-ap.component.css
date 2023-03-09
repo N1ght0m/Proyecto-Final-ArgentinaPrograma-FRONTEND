@@ -7,7 +7,7 @@
     margin-right: 0.5em;
 }
 #APLogo{
-width: 150px;
+    width: 150px;
 }
 img{
     width: 50px;
@@ -16,6 +16,17 @@ img{
 .btn{
     border-width: medium;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo img {
+    width: 150px;
+    margin-right: 10px;
+}
+
 
 /*--- mobile phone view --*/
 

@@ -24,6 +24,7 @@ import { NeweducacionComponent } from './components/educacion/new-educacion.comp
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { EditSkillComponent } from './components/hard-soft-skills/edit-skill.component';
 import { NewSkillComponent } from './components/hard-soft-skills/new-skill.component';
+import { EditAcerceDeComponent } from './components/about-me/edit-acerce-de.component';
 
 
 
@@ -48,6 +49,7 @@ import { NewSkillComponent } from './components/hard-soft-skills/new-skill.compo
     EditEducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditAcerceDeComponent,
   ],
   imports: [
     BrowserModule,
