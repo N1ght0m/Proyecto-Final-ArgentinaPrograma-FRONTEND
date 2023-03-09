@@ -27,6 +27,13 @@ img{
     margin-right: 10px;
 }
 
+.hashtag h1 {
+    color: aliceblue;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: -20px;
+}
+
 
 /*--- mobile phone view --*/
 
